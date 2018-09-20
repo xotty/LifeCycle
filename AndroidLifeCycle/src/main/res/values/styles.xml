@@ -1,0 +1,11 @@
+<resources>
+    <style name="actionbar_def_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionbar_def_style</item>
+    </style>
+    <style name="AppThemeCompat" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+</resources>

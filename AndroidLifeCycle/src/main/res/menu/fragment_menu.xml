@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/simple"
+        android:title="Simple" />
+    <item
+        android:id="@+id/showhide"
+        android:title="Show/Hide" />
+    <item
+        android:id="@+id/transaction"
+        android:title="Transaction" />
+    <item
+        android:id="@+id/backstack"
+        android:title="BackStack" />
+    <item
+        android:id="@+id/viewpager"
+        android:title="ViewPager" />
+</menu>

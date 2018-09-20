@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.xottys.lifecycle">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- client -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <!-- Authenticator -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="org.xottys.lifecycle.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="org.xottys.lifecycle.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitylifecycle.ActivityLifecycle.Activity1"
+            android:label="@string/lifecycle" />
+        <activity
+            android:name=".activitylifecycle.ActivityLifecycle.Activity2"
+            android:label="@string/lifecycle"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".activitylifecycle.ActivityLifecycle.Activity3"
+            android:label="@string/lifecycle" />
+
+
+        <activity
+            android:name=".activitylifecycle.ActivityTaskMode.StandardActivity"
+            android:label="@string/title_activity_standard" />
+        <activity
+            android:name=".activitylifecycle.ActivityTaskMode.SingleTaskActivity"
+            android:label="singleTask"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activitylifecycle.ActivityTaskMode.SingleTopActivity"
+            android:label="singleTask"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activitylifecycle.ActivityTaskMode.SingleInstanceActivity"
+            android:label="singleTask"
+            android:launchMode="singleInstance" />
+
+        <activity
+        android:name=".fragmentlifecycle.FragmentSimpleActivity"
+        android:label="@string/fragmentlifecycle"
+        android:theme="@style/AppThemeCompat"/>
+        <activity
+            android:name=".fragmentlifecycle.FragmentShowHideActivity"
+            android:label="@string/fragmentlifecycle"
+            android:theme="@style/AppThemeCompat"/>
+        <activity
+            android:name=".fragmentlifecycle.FragmentTransactionActivity"
+            android:label="@string/fragmentlifecycle"
+            android:theme="@style/AppThemeCompat"/>
+        <activity
+            android:name=".fragmentlifecycle.FragmentBackStackActivity"
+            android:label="@string/fragmentlifecycle"
+            android:theme="@style/AppThemeCompat"/>
+        <activity
+            android:name=".fragmentlifecycle.FragmentViewPagerActivity"
+            android:label="@string/fragmentlifecycle"
+            android:theme="@style/AppThemeCompat"/>
+
+        <activity
+            android:name=".servicelifecycle.ServiceActivity"
+            android:label="@string/servicelifecycle" />
+
+        <service
+            android:name="org.xottys.lifecycle.servicelifecycle.MyStartService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="org.xottys.lifecycle.servicelifecycle.MyBindService"
+            android:enabled="true"/>
+    </application>
+
+</manifest>
