@@ -102,21 +102,17 @@ public class FragmentViewPagerActivity extends FragmentBaseActivity {
             @Override
             public void onPageSelected(int arg0) {
             // arg0是当前选中的页面的Position
-              //  atv.setText("xxx");
-                Log.i(TAG, "onPageSelected: ");
                 MyApplication.isFirstSetUserVisibleHint=false;
             }
 
             @Override
             public void onPageScrolled(int arg0, float arg1, int arg2) {
             // arg0 :当前页面，及你点击滑动的页面；arg1:当前页面偏移的百分比；arg2:当前页面偏移的像素位置
-                Log.i(TAG, "onPageScrolled: ");
             }
 
             @Override
             public void onPageScrollStateChanged(int arg0) {
             //arg0 ==1的时表示正在滑动，arg0==2的时表示滑动完毕了，arg0==0的时表示什么都没做。
-                Log.i(TAG, "onPageScrollStateChanged: ");
 
             }
         });

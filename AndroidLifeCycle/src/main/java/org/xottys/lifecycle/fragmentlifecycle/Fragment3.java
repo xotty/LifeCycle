@@ -153,10 +153,13 @@ public class Fragment3 extends Fragment
 	@Override
 	public void setUserVisibleHint(boolean isVisibleToUser) {
         if ( !MyApplication.isFirstSetUserVisibleHint) {
-            MyApplication.isFirstSetUserVisibleHint=true;
-			if (getActivity()!=null)
+
+			if (getActivity() != null) {
 				((FragmentViewPagerActivity) getActivity()).atv.setText("");
-        }
+				Log.i(TAG, "setUserVisibleHint: 3");
+				MyApplication.isFirstSetUserVisibleHint = true;
+			}
+		}
 		showText("--Fragment3-->setUserVisibleHint--");
 		Log.d(TAG, "--Fragment3-->setUserVisibleHint--");
 		super.setUserVisibleHint(isVisibleToUser);
