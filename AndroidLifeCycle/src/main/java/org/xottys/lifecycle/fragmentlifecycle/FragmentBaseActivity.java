@@ -26,11 +26,10 @@
 package org.xottys.lifecycle.fragmentlifecycle;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Menu;
@@ -39,10 +38,6 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import org.xottys.lifecycle.R;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public abstract class FragmentBaseActivity extends AppCompatActivity {
     private static final String TAG = "FragmentLifecycle";

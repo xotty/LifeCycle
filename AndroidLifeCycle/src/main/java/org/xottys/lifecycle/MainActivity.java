@@ -6,7 +6,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -127,7 +127,6 @@ public class MainActivity extends Activity {
                 popup.show();
             }
         });
-
 
         bt4.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {

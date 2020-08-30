@@ -36,11 +36,9 @@
  */
 package org.xottys.lifecycle.fragmentlifecycle;
 
-import android.support.v4.app.Fragment;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.util.Log;
-
+import androidx.fragment.app.Fragment;
+import com.google.android.material.tabs.TabLayout;
+import androidx.viewpager.widget.ViewPager;
 import org.xottys.lifecycle.MyApplication;
 import org.xottys.lifecycle.R;
 

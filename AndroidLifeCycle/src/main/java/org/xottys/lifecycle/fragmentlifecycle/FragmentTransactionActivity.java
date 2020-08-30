@@ -26,7 +26,7 @@
 package org.xottys.lifecycle.fragmentlifecycle;
 
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.view.View.OnClickListener;

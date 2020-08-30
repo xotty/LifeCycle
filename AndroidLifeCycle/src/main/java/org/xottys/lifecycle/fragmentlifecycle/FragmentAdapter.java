@@ -1,9 +1,10 @@
 package org.xottys.lifecycle.fragmentlifecycle;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+
 import java.util.List;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 /*可选的替代Adapter
 import android.support.v4.app.FragmentStatePagerAdapter;*/
 
